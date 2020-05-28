@@ -5,7 +5,7 @@
 4. Output inside 
     4.1. <h1> - Brewery Name
     4.2. <p> - Brewery Type
-    4.3. and inside main tag you could output some other data that is fetched from the API (expl. Country, City, State, Province)
+    4.3. and inside main tag you could output some other data that is fetched from the API (example. Country, City, State, Province)
 5. Hide the <main> and when the button 'Show info' is clicked
     5.1. Toggle <main>
     5.2. Toggle the text Show info/Hide info

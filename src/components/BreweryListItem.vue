@@ -16,41 +16,10 @@
       </button>
     </footer>
   </a>
-  <!-- <a :href="brewery.website_url" class="card">
-    <h1>{{brewery.name}}</h1>
-    <p>Type: {{brewery.brewery_type}}</p>
-    <main v-if="isInfoShown">
-      <p>Country: {{ brewery.country }}</p>
-      <p>City: {{ brewery.city }}</p>
-      <p>State: {{ brewery.state }}</p>
-      <p>Street: {{ brewery.street }}</p>
-    </main>
-    <footer>
-      <button @click.prevent="isInfoShown = !isInfoShown" :class="{ active: isInfoShown }">
-        <span v-if="!isInfoShown">
-          Show Info
-        </span>
-        <span v-else>
-          Hide Info
-        </span>
-      </button>
-    </footer>
-  </a> -->
 </template>
 
 <script>
 export default {
-  // props: {
-  //   brewery: {
-  //     type: Object,
-  //     default: null
-  //   }
-  // },
-  // data() {
-  //   return {
-  //     isInfoShown: false
-  //   }
-  // }
 };
 </script>
 

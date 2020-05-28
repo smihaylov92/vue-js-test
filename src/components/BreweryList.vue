@@ -1,14 +1,10 @@
 <template>
   <div>
     <!-- BreweryListFilter -->
-    <!-- <BreweryListFilter v-model="type" /> -->
 
     <section class="breweries">
-      <div class="brewery-item" v-for="brewery in filteredBreweries" :key="brewery.id">
+      <div class="brewery-item">
         <!-- BreweryListItem -->
-        <!-- <BreweryListItem
-          :brewery="brewery"
-        /> -->
       </div>
     </section>
   </div>
@@ -16,44 +12,8 @@
 
 <script>
 
-// import axios from "axios";
-// import BreweryListItem from "./BreweryListItem";
-// import BreweryListFilter from "./BreweryListFilter";
-
 export default {
-  // components: {
-  //   BreweryListItem,
-  //   BreweryListFilter
-  // },
-
-  // data() {
-  //   return {
-  //     breweries: [],
-  //     type: ''
-  //   };
-  // },
-
-  // computed: {
-  //   filteredBreweries() {
-  //     return this.breweries.filter((brewery) => {
-  //       return brewery.brewery_type.toLowerCase().indexOf(this.type.toLowerCase()) > -1
-  //     });
-  //   }
-  // },
-
-  // methods: {
-  //   async getBreweries() {
-  //     const { data } = await axios.get(
-  //       "https://api.openbrewerydb.org/breweries"
-  //     );
-
-  //     this.breweries = data;
-  //   },
-  // },
-
-  // created() {
-  //   this.getBreweries();
-  // },
+ 
 };
 </script>
 
