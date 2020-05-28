@@ -1,17 +1,16 @@
 
 1. In BreweryList request the data from https://api.openbrewerydb.org/breweries (You can use Axios)
-2. Add the BreweryListItem inside .brewery-item and pass the card component data
-3. Inside BreweryListItem use bind to add the website_url in the anchor tag
-4. Output inside 
-    4.1. <h1> - Brewery Name
-    4.2. <p> - Brewery Type
-    4.3. and inside main tag you could output some other data that is fetched from the API (example. Country, City, State, Province)
-5. Hide the <main> and when the button 'Show info' is clicked
-    5.1. Toggle <main>
-    5.2. Toggle the text Show info/Hide info
-    5.3. Use class binding to toggle the class active
-6. In BreweryListFilter output the breweryTypes
-    6.1. When the user choose a type - the data should be passed to the parent component.
-7. In BreweryList you should get the value from the BreweryListFilter
-    7.1. BreweryList should filter the data that comes from the API depending on the selected valie from the BreweryListFilter
-    7.2. Output the data in the template
+2. In BreweryListFilter output the breweryTypes
+    2.1. When the user choose a type - the data should be passed to the parent component.
+3. In BreweryList you should get the value from the BreweryListFilter
+    3.1. BreweryList should filter the data that comes from the API depending on the selected valie from the BreweryListFilter
+4. Add the BreweryListItem inside .brewery-item and pass the API data
+5. Inside BreweryListItem use bind to add the website_url in the anchor tag
+6. Output inside 
+    6.1. <h1> - Brewery Name
+    6.2. <p> - Brewery Type
+    6.3. and inside main tag you could output some other data that is fetched from the API (example. Country, City, State, Province)
+7. Hide the <main> and when the button 'Show info' is clicked
+    7.1. Toggle <main>
+    7.2. Toggle the text Show info/Hide info
+    7.3. Use class binding to toggle the class active
