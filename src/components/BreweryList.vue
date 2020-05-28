@@ -1,15 +1,14 @@
 <template>
   <div>
-    <BreweryListFilter/>
+    <!-- BreweryListFilter -->
+    <!-- <BreweryListFilter v-model="type" /> -->
 
-    <div>
-      Number of results: {{ filteredBreweries.length }}
-    </div>
     <section class="breweries">
       <div class="brewery-item" v-for="brewery in filteredBreweries" :key="brewery.id">
-        <BreweryListItem
+        <!-- BreweryListItem -->
+        <!-- <BreweryListItem
           :brewery="brewery"
-        />
+        /> -->
       </div>
     </section>
   </div>
@@ -17,48 +16,44 @@
 
 <script>
 
-import axios from "axios";
-import { EventBus } from '../modules/eventbus.js';
-import BreweryListItem from "./BreweryListItem";
-import BreweryListFilter from "./BreweryListFilter";
+// import axios from "axios";
+// import BreweryListItem from "./BreweryListItem";
+// import BreweryListFilter from "./BreweryListFilter";
 
 export default {
-  components: {
-    BreweryListItem,
-    BreweryListFilter
-  },
-  data() {
-    return {
-      breweries: [],
-      type: ''
-    };
-  },
-  computed: {
-    filteredBreweries() {
-      return this.breweries.filter((brewery) => {
-        return brewery.brewery_type.toLowerCase().indexOf(this.type.toLowerCase()) > -1
-      });
-    }
-  },
-  methods: {
-    async getBreweries() {
-      const { data } = await axios.get(
-        "https://api.openbrewerydb.org/breweries"
-      );
+  // components: {
+  //   BreweryListItem,
+  //   BreweryListFilter
+  // },
 
-      this.breweries = data;
-    },
+  // data() {
+  //   return {
+  //     breweries: [],
+  //     type: ''
+  //   };
+  // },
 
-    getSelectedType() {
-      EventBus.$on("type", selectedType => {
-        this.type = selectedType;
-      });
-    },
-  },
-  created() {
-    this.getBreweries();
-    this.getSelectedType();
-  },
+  // computed: {
+  //   filteredBreweries() {
+  //     return this.breweries.filter((brewery) => {
+  //       return brewery.brewery_type.toLowerCase().indexOf(this.type.toLowerCase()) > -1
+  //     });
+  //   }
+  // },
+
+  // methods: {
+  //   async getBreweries() {
+  //     const { data } = await axios.get(
+  //       "https://api.openbrewerydb.org/breweries"
+  //     );
+
+  //     this.breweries = data;
+  //   },
+  // },
+
+  // created() {
+  //   this.getBreweries();
+  // },
 };
 </script>
 

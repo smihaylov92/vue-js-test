@@ -1,5 +1,22 @@
 <template>
-  <a :href="brewery.website_url" class="card">
+  <a class="card">
+    <h1></h1>
+    <p>Type: </p>
+    <main>
+      <p>Country: </p>
+      <p>City: </p>
+      <p>State: </p>
+      <p>Street: </p>
+    </main>
+    <footer>
+      <button>
+        <span>
+          Show Info
+        </span>
+      </button>
+    </footer>
+  </a>
+  <!-- <a :href="brewery.website_url" class="card">
     <h1>{{brewery.name}}</h1>
     <p>Type: {{brewery.brewery_type}}</p>
     <main v-if="isInfoShown">
@@ -18,22 +35,22 @@
         </span>
       </button>
     </footer>
-  </a>
+  </a> -->
 </template>
 
 <script>
 export default {
-  props: {
-    brewery: {
-      type: Object,
-      default: null
-    }
-  },
-  data() {
-    return {
-      isInfoShown: false
-    }
-  }
+  // props: {
+  //   brewery: {
+  //     type: Object,
+  //     default: null
+  //   }
+  // },
+  // data() {
+  //   return {
+  //     isInfoShown: false
+  //   }
+  // }
 };
 </script>
 

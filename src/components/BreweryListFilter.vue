@@ -1,27 +1,18 @@
 <template>
   <section class="filter">
-    <select v-model="selectedType" @change="selectType">
-      <option :value="''">all</option>
-      <option v-for="(type, index) in breweryTypes" :key="index">{{ type }}</option>
+    <select @change="$emit('input', $event.target.value)">
+      <option v-for="(type, index) in breweryTypes" :key="index" :value="type">{{ type }}</option>
     </select>
   </section>
 </template>
 
 <script>
-import { EventBus } from '../modules/eventbus.js';
-
 export default {
   data() {
     return {
-      breweryTypes: ['micro', 'contract', 'brewpub', 'regional'],
-      selectedType: ''
+      breweryTypes: ['', 'micro', 'contract', 'brewpub', 'regional'],
     };
   },
-  methods: {
-    selectType: function() {
-      EventBus.$emit("type", this.selectedType);
-    }
-  }
 }
 </script>
 
