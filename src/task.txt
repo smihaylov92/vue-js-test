@@ -1,10 +1,9 @@
-
 1. In BreweryList request the data from https://api.openbrewerydb.org/breweries (You can use Axios)
 2. In BreweryListFilter output the breweryTypes
     2.1. When the user choose a type - the data should be passed to the parent component.
 3. In BreweryList you should get the value from the BreweryListFilter
     3.1. BreweryList should filter the data that comes from the API depending on the selected valie from the BreweryListFilter
-4. Add the BreweryListItem inside .brewery-item and pass the API data
+4. Add the BreweryListItem inside .brewery-item and pass the filtered data
 5. Inside BreweryListItem use bind to add the website_url in the anchor tag
 6. Output inside 
     6.1. <h1> - Brewery Name
